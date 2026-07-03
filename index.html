@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <title>ProjectShopLLC</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>ProjectShopLLC</h1>
-        <div class="nav">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+        <div class="header-container">
+            <h1>Project<span id="shop">ShopLLC</span></h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
     </header>
     <main>
         <section id="home">
-            <div>
-                <h1>Welcome to ProjectShopLLC</h1>
+            <div id="home-info">
+                <h2>Welcome to ProjectShopLLC</h2>
                 <p>Serving the valley for over 20 years.</p>
                 <a href="#contact">Get in touch</a>
             </div>
-            <img src="#" alt="">
+            <img src="assets/property.jpg" alt="" id="property">
         </section>
-        <section id="#about">
-            <img src="#" alt="">
-            <div>
-                <h2>Our Story</h2>
-                <p>This is how we became who we are today.</p>
+        <section id="about">
+            <div class="about-container">
+                <img src="assets/about.jpg" alt="" id="about-img">
+                <div id="about-info">
+                    <h2>Our Story</h2>
+                    <p id="story">Tricia Rochford and Eve Webb, in their combined forty years experience in the real estate industry, were involved in a wide range of award-winning projects including retail shopping centers, office buildings, master-planned auto parks, industrial parks, and office complexes.</p>
+                </div>
             </div>
         </section>
         <section id="contact">
@@ -49,12 +57,10 @@
                         <input type="text" id="email" name="email" required>
                     </div>
                     <div class="phone prompt">
-                        <label for="phone">Name</label>
+                        <label for="phone">Phone</label>
                         <input type="text" id="phone" name="phone" required>
                     </div>
                     <div class="preference prompt">
-
-
                         <label>Contact Preference</label>
                         <div class="radios">
                             <label for="email-preference">
@@ -67,12 +73,17 @@
                             </label>
                         </div>
                     </div>
+                    <div class="submit">
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
     <footer>
-        <h3>Footer</h3>
+        <div class="footer-container">
+            <h3>ProjectShopLLC</h3>
+        </div>
     </footer>
 </body>
 

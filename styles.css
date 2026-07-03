@@ -1,0 +1,198 @@
+:root{
+    --purple: #7E15FF;
+    --teal: #00BF9F;
+    --black: #080808;
+    --white: #f8f8f8;
+    --gray: #252525;
+
+}
+
+body{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: var(--white);
+}
+
+header{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.header-container, #home, .about-container, #contact, .footer-container{
+    max-width: 1080px;
+    margin: auto;
+}
+
+.header-container{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color: var(--purple);
+    font-size: 3.4rem;
+}
+
+#shop{
+    color: var(--teal);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 47%;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2.1rem;
+    transition: color 0.2s ease, box-shadow 0.2s ease;
+    background-color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover{
+    color: var(--purple);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+    
+}
+
+#home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    height: 500px;
+}
+
+#home-info{
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+
+}
+
+#home-info h2, #home-info p, #about-info h2, #about-info p{
+    margin: 0 0 10px 0;
+}
+
+#home-info a, button[type="submit"]{
+    text-decoration: none;
+    border: 2px solid var(--purple);
+    border-radius: 12px;
+    width: 45%;
+    font-size: 2rem;
+    color: var(--purple);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0 0 30px rgba(102, 0, 102, 0.40);
+    transition: all 0.3s ease;
+}
+
+#home-info a:hover, button[type="submit"]:hover{
+    background-color: var(--purple);
+    color: white;
+    box-shadow: 0 0 30px rgba(102, 0, 102, 0.85);
+    cursor: pointer;
+}
+
+p{
+    color: var(--gray);
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 3.8rem;
+}
+
+#property, #about-img{
+    width: 30rem;
+    height: 25rem;
+    border: 4px solid var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+    object-fit: cover;
+}
+
+#about{
+    background-color: var(--teal);
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    height: 575px;
+}
+
+#about-info{
+    width: 47%;
+}
+
+#contact{
+    height: 550px;
+}
+
+#contact h2{
+    margin: 0;
+    padding: 1rem 0 2rem;
+}
+
+.contact-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px
+}
+
+.prompt {
+    font-size: 2.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 2.75rem;
+    border: 3px solid var(--gray);
+    font-size: 1.5rem;
+}
+
+input[type="radio"]{
+    width: 2rem;
+}
+
+.radios{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.radios label{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer{
+    background-color: var(--teal);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+footer h3{
+    margin: 0;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+.submit{
+    display: flex;
+    align-items: end;
+}
